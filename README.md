@@ -4,8 +4,6 @@
 This project automates the critical user account flows on the Magento e-commerce demo site (https://magento.softwaretestingboard.com/) using Go and Selenium WebDriver. It is designed for QA assessment and covers:
 
 - Sign up flow
-- Login with the same account
-- Sign out
 - Change password
 
 All flows are tested in a single, robust end-to-end scenario.
@@ -29,11 +27,8 @@ Automation/
 ├── tests/
 │   ├── e2e_flow_test.go
 │   └── screenshots/
-│        ├── e2e_signup.png
-│        ├── e2e_login.png
-│        ├── e2e_signout1.png
-│        ├── e2e_signout2.png
-│        └── e2e_changepassword.png
+│        ├── signup.png
+│        └── changepassword.png
 ```
 
 ## Setup Instructions
@@ -65,26 +60,17 @@ Run the following command to execute the full user flow:
 go test -v ./tests/e2e_flow_test.go
 ```
 
-- This will run the sign up, login, sign out, and change password flows in a single browser session.
+- This will run the sign up and change password flows in a single browser session.
 - Screenshots for each step will be saved in `tests/screenshots/` for proof of execution.
 
 ## Proof of Execution
 Below are example screenshots captured during automated test runs:
 
 ### Sign Up
-![Sign Up](tests/screenshots/e2e_signup.png)
-
-### Login
-![Login](tests/screenshots/e2e_login.png)
-
-### Sign Out (after signup)
-![Sign Out 1](tests/screenshots/e2e_signout1.png)
-
-### Sign Out (after login)
-![Sign Out 2](tests/screenshots/e2e_signout2.png)
+![Sign Up](tests/screenshots/signup.png)
 
 ### Change Password
-![Change Password](tests/screenshots/e2e_changepassword.png)
+![Change Password](tests/screenshots/changepassword.png)
 
 ## Test Cases
 - All test cases are documented in `testcases.xlsx`.

@@ -2,11 +2,10 @@
 /test_account*.txt
 /tests/test_account*.txt
 
-# Only keep e2e screenshots, ignore others
-/tests/screenshots/signup.png
-/tests/screenshots/login.png
-/tests/screenshots/signout.png
-/tests/screenshots/changepassword.png
+# Only keep signup.png and changepassword.png screenshots
+/tests/screenshots/*
+!/tests/screenshots/signup.png
+!/tests/screenshots/changepassword.png
 
 # Ignore ChromeDriver binary
 chromedriver.exe

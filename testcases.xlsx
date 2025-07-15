@@ -2,12 +2,7 @@ Test Case ID,Title,Steps,Expected Result,Actual Result,Status
 TC01,Sign Up,1. Go to sign up page
 2. Enter valid details
 3. Submit form,Account is created and user is logged in,,
-TC02,Login,1. Go to login page
-2. Enter valid credentials
-3. Submit form,User is logged in,,
-TC03,Sign Out,1. Login
-2. Click 'Sign Out',User is logged out,,
-TC04,Change Password,1. Login
+TC02,Change Password,1. Login
 2. Go to account edit
 3. Change password
 4. Save,Password is changed successfully,, 
