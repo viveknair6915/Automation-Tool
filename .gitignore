@@ -1,0 +1,21 @@
+# Ignore auto-generated credentials and test artifacts
+/test_account*.txt
+/tests/test_account*.txt
+
+# Only keep e2e screenshots, ignore others
+/tests/screenshots/signup.png
+/tests/screenshots/login.png
+/tests/screenshots/signout.png
+/tests/screenshots/changepassword.png
+
+# Ignore ChromeDriver binary
+chromedriver.exe
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore Go build output
+/bin/
+*.exe
+*.out 
